@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+import { Router } from 'express';
+const router = Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
 
 //las rutas que se definen 
 //para los métodos GET a la raíz de la aplicación
-router.get('/hola', function (req, res, next){
+router.get('/', (_req, res) => {
   res.send('Respond with a resource');
 }) 
 
-module.exports = router;
+export default router;
