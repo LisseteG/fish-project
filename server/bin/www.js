@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
- import app, { set } from '../app';
+ import app, { set } from '../server/app';
  const debug = require('debug')('fish-project:server');
  import { createServer } from 'http';
  
